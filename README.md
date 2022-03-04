@@ -13,7 +13,7 @@ Older releases are unavailable so the current version (3.3.1) differs from the s
 
 ## Spark
 
-For the test script, dependency management is done using maven. The [Maven official image](https://hub.docker.com/_/maven) page on Docker Hub provides a guide on how to package a local repository with the image.
+For the test script, dependency management is done using maven. The [Maven official image](https://hub.docker.com/_/maven) page on Docker Hub provides a guide on how to reuse the Maven local repository. This is necessary to avoid having to download the dependencies again.
 
 This image can be built by runnning:
 
