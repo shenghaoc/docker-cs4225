@@ -1,6 +1,6 @@
-FROM maven:3-openjdk-11
+FROM maven:3-amazoncorretto-11
 
-RUN mkdir -p /opt && apt update && apt install curl
+RUN mkdir -p /opt && yum update -y && yum install -y curl
 
 RUN curl -L https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz | tar xvz -C /opt
 
